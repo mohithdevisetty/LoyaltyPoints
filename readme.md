@@ -33,9 +33,9 @@ Thought Process:
 
 Each member class explanation:
 CreditCardDataProcessor --> This is the main class responsible to read the csv file. Before doing that, it will first
-try to
+try to get the last processed recored from the deserialized format of LoyaltyPoints object. <br/>
 SaveTask --> This class is responsible to perform each runnable task. This task could be extracting the stringified data
-to LoyaltyPoints object and add to the queue and process them to DB.
-BatchInsert --> DAO layer to connect and interact with DB.
-LoyaltyPoints --> Pojo to handle the earned points data with user information.
+to LoyaltyPoints object and add to the queue and process them to DB.<br/>
+BatchInsert --> DAO layer to connect and interact with DB.<br/>
+LoyaltyPoints --> Pojo to handle the earned points data with user information.<br/>
 
